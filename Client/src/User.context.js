@@ -16,7 +16,7 @@ export default function UsersProvider({ children }) {
   const [message, setMessage] = useState("");
 
   const login = useCallback((email, password) => {
-    fetch("https://imdb-server.onrender.com/api/login", {
+    fetch("/api/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
